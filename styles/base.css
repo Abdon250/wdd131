@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    color: white;
+    background-color: oklab(47.679% -0.06348 -0.0554);
+}  
+header span{
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    height: 5rem;
+}
+.nav-bar{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: oklab(15.29% -0.0683 -0.0346);
+    height: 3rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-bar li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: flex;
+}
+nav a:hover {
+    background-color: oklab(30.98% -0.0427 -0.0251);
+    border-radius: 5px;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    min-height: 80vh;
+    padding: 1rem;
+    background-color: oklab(91.37% -0.00196 -0.00254);
+}
+h1 {
+    font-weight: 90;
+    text-align: right;
+    padding: 1rem;
+}
+h2 {
+
+    margin-bottom: 1rem;
+    color: white;
+    display: block;
+    width: 100%;
+    background-color: oklab(47.679% -0.06348 -0.0554);
+    padding: 10px;
+    text-align: center;
+
+}
+
+.card {
+    height: 60vh;
+    grid-column: 1 ;
+    background-color: oklab(98.04% 0 0);
+    border: 1px solid oklab(80.74% -0.00392 -0.00588);
+    border-radius: 5px;
+    padding: 0;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card p{
+    padding: 1rem;
+   
+}
+.about-me {
+    height: 24vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+} 
+#me{
+    height: 150px;
+    padding: 1rem;
+    align-items: right;
+}
+.location{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+#flag{
+    height: 120px;
+    padding: 1rem;
+}
+h3{
+    text-align: center;
+    border-bottom: 2px solid oklab(80.74% -0.00392 -0.00588);
+    padding-top: 1rem;
+}
+
+.card2 {
+    
+    height: 60vh;
+    grid-column: 2;
+    background-color: oklab(98.04% 0 0);
+    border: 1px solid oklab(80.74% -0.00392 -0.00588);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card2 a{
+    padding: 1rem;
+}
+.resources {
+    justify-content: left;
+    list-style: none;
+    padding-top: 3rem;
+}
+.resources li {
+    margin-bottom: 1rem;
+}
+footer {
+    background-color: oklab(47.679% -0.06348 -0.0554);
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    height: 5rem;
+}
