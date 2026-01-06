@@ -39,7 +39,7 @@ nav a:hover {
 main {
     display: grid;
     grid-template-columns: 1fr 40%;
-    min-height: 80vh;
+
     padding: 1rem;
     background-color: oklab(91.37% -0.00196 -0.00254);
 }
@@ -61,7 +61,7 @@ h2 {
 }
 
 .card {
-    height: 60vh;
+    
     grid-column: 1 ;
     background-color: oklab(98.04% 0 0);
     border: 1px solid oklab(80.74% -0.00392 -0.00588);
@@ -77,7 +77,7 @@ h2 {
 .about-me {
     height: 24vh;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr auto ;
 } 
 #me{
     height: 150px;
@@ -100,7 +100,7 @@ h3{
 
 .card2 {
     
-    height: 60vh;
+    
     grid-column: 2;
     background-color: oklab(98.04% 0 0);
     border: 1px solid oklab(80.74% -0.00392 -0.00588);
