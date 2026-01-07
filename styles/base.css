@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'barlow-condensed', sans-serif;
+}
 header {
     color: white;
     background-color: oklab(47.679% -0.06348 -0.0554);
@@ -43,9 +46,10 @@ main {
     padding: 1rem;
     background-color: oklab(91.37% -0.00196 -0.00254);
 }
-h1 {
+main h1 {
+    grid-column: 1 / -1;
     font-weight: 90;
-    text-align: right;
+    text-align: center;
     padding: 1rem;
 }
 h2 {
@@ -61,8 +65,6 @@ h2 {
 }
 
 .card {
-    
-    grid-column: 1 ;
     background-color: oklab(98.04% 0 0);
     border: 1px solid oklab(80.74% -0.00392 -0.00588);
     border-radius: 5px;
@@ -97,20 +99,6 @@ h3{
     border-bottom: 2px solid oklab(80.74% -0.00392 -0.00588);
     padding-top: 1rem;
 }
-
-.card2 {
-    
-    
-    grid-column: 2;
-    background-color: oklab(98.04% 0 0);
-    border: 1px solid oklab(80.74% -0.00392 -0.00588);
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.card2 a{
-    padding: 1rem;
-}
 .resources {
     justify-content: left;
     list-style: none;
@@ -118,6 +106,7 @@ h3{
 }
 .resources li {
     margin-bottom: 1rem;
+    padding: 0.5rem;
 }
 footer {
     background-color: oklab(47.679% -0.06348 -0.0554);
