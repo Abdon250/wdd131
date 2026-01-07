@@ -8,7 +8,8 @@ body {
 }
 header {
     color: white;
-    background-color: oklab(47.679% -0.06348 -0.0554);
+    background-color: #3B4A73;
+
 }  
 header span{
     display: block;
@@ -24,7 +25,7 @@ header span{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    background-color: oklab(15.29% -0.0683 -0.0346);
+    background-color: #0F1A2A;
     height: 3rem;
     align-items: center;
     justify-content: space-evenly;
@@ -36,7 +37,7 @@ header span{
     display: flex;
 }
 nav a:hover {
-    background-color: oklab(30.98% -0.0427 -0.0251);
+    background-color: #2A3550;
     border-radius: 5px;
 }
 main {
@@ -44,7 +45,7 @@ main {
     grid-template-columns: 1fr 40%;
 
     padding: 1rem;
-    background-color: oklab(91.37% -0.00196 -0.00254);
+    background-color: #E6E9EE;
 }
 main h1 {
     grid-column: 1 / -1;
@@ -65,8 +66,8 @@ h2 {
 }
 
 .card {
-    background-color: oklab(98.04% 0 0);
-    border: 1px solid oklab(80.74% -0.00392 -0.00588);
+    background-color: #FAFAFA;
+    border: 1px solid #C9CED6;
     border-radius: 5px;
     padding: 0;
     margin-bottom: 1rem;
@@ -84,7 +85,7 @@ h2 {
 #me{
     height: 150px;
     padding: 1rem;
-    align-items: right;
+    align-items: flex-end;
 }
 .location{
     display: grid;
@@ -96,7 +97,7 @@ h2 {
 }
 h3{
     text-align: center;
-    border-bottom: 2px solid oklab(80.74% -0.00392 -0.00588);
+    border-bottom: 2px solid #C9CED6;
     padding-top: 1rem;
 }
 .resources {
@@ -109,7 +110,7 @@ h3{
     padding: 0.5rem;
 }
 footer {
-    background-color: oklab(47.679% -0.06348 -0.0554);
+    background-color: #3B4A73;
     padding: 1rem;
     text-align: center;
     color: white;
