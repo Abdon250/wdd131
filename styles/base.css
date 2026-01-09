@@ -34,7 +34,8 @@ header span{
     color: #ffffff;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    display: flex;
+    /*display: flex;*/
+    
 }
 nav a:hover {
     background-color: #2A3550;
