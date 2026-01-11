@@ -1,0 +1,23 @@
+@media (min-width:500px){
+    #menu-toggle {
+        display: none;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: none;
+    }
+    .nav-links li {
+        border: none;
+        margin-left: 20px;
+    }
+    .nav-links a {
+        padding: 0;
+    }
+    .figures{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
