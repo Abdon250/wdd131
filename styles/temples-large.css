@@ -1,4 +1,4 @@
-@media (min-width:500px){
+@media (min-width:760px){
     #menu-toggle {
         display: none;
     }
@@ -19,5 +19,7 @@
     .figures{
         grid-template-columns: repeat(3, 1fr);
     }
-    
+    footer {
+        height: 4rem;
+    }
 }
