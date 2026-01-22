@@ -1,16 +1,11 @@
-:root { 
-    --rwandan-blue: #1EB7EA;
-    --rwandan-yellow: #FAD201;
-    --rwandan-green: #009639;
-    --rwandan-sun-yellow: #FCD116;
-}
+
 * {
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
 }
 header {
-    background-color: var(--rwandan-blue);
+    background-color: #1EB7EA;
     color: #000000;
     padding: 10px;
     margin-bottom: 1rem;
@@ -26,7 +21,7 @@ body {
     
 }
 footer {
-    background-color: var(--rwandan-green);
+    background-color: #009639;
     color: #FFFFFF;
     text-align: center;
     padding: 10px;
