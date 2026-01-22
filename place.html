@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rwanda</title>
+    <meta name="description" content="Rwanda the country of a thousand hills and home to magnificent and beautiful animal species including the rare mountain gorillas. It is also known for its rich culture and heritage represented in its numerous traditional dances and crafts.">
+    <meta name="author" content="TUYIZERE Niyogisubizo Abdon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Rwanda</h1>    
+    </header>
+    <main>
+        <section class="intro-section">
+            <picture>
+                <source srcset="images/Kigali-C.webp" media="(min-width: 1000px)">
+                <source srcset="images/rwanda-gallery.webp" media="(min-width: 500px)">
+                <img src="images/rwanda-safaris.webp" alt="Rwanda landscape" width="600" height="400">
+            </picture>
+            <h2>Data</h2>
+            <ul class="data-list">
+                <li> <span class="label">Capital:</span>Kigali</li>
+                <li> <span class="label">Population:</span>13 million</li>
+                <li> <span class="label">Area:</span>26,338 km²</li>
+                <li> <span class="label">Official Languages:</span>Kinyarwanda, French, English, Swahili</li>
+                <li> <span class="label">Currency:</span>Rwandan Franc (RWF)</li>
+                <li> <span class="label">GDP (Nominal):</span>$10.35 billion (2021 est.)</li>
+                <li> <span class="label">Climate:</span>Tropical highland climate</li>
+            </ul>
+        </section> 
+        <section class="weather-section">
+            <h2>Weather</h2>
+            <ul class="weather-widget">   
+                <!--dynamic weather widget will be loaded here-->
+            </ul>
+        </section>      
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> TUYIZERE N. Abdon. KIGALI</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
