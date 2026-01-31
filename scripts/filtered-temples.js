@@ -107,12 +107,11 @@ function getYear(dedicatedDate) {
   return new Date(dedicatedDate).getFullYear();
 }
 
-
 const templeContainer = document.querySelector(".figures");
 
-
-function displayTemples(templeList) {
-  templeContainer.innerHTML = ""; 
+function displayTemples(templeList, title = "All Temples") {
+  document.getElementById("page-title").textContent = title;
+  templeContainer.innerHTML = "";
 
   templeList.forEach(temple => {
     const templeCard = document.createElement("div");
@@ -135,41 +134,39 @@ function displayTemples(templeList) {
     const area = document.createElement("p");
     area.innerHTML = `<strong>Area:</strong> ${temple.area.toLocaleString()} sq ft`;
 
-   
     templeCard.append(image, name, location, dedicated, area);
     templeContainer.appendChild(templeCard);
   });
 }
 
-
 displayTemples(temples);
-
 
 document.getElementById("home").addEventListener("click", function(e) {
   e.preventDefault();
-  displayTemples(temples);
+  displayTemples(temples, "All Temples");
 });
 
 document.getElementById("old").addEventListener("click", function(e) {
   e.preventDefault();
   const oldTemples = temples.filter(t => getYear(t.dedicated) < 1900);
-  displayTemples(oldTemples);
+  displayTemples(oldTemples, "Old Temples (Before 1900)");
 });
 
 document.getElementById("new").addEventListener("click", function(e) {
   e.preventDefault();
   const newTemples = temples.filter(t => getYear(t.dedicated) > 2000);
-  displayTemples(newTemples);
+  displayTemples(newTemples, "New Temples (After 2000)");
 });
 
 document.getElementById("large").addEventListener("click", function(e) {
   e.preventDefault();
   const largeTemples = temples.filter(t => t.area > 90000);
-  displayTemples(largeTemples);
+  displayTemples(largeTemples, "Large Temples (> 90,000 sq ft)");
 });
 
 document.getElementById("small").addEventListener("click", function(e) {
   e.preventDefault();
   const smallTemples = temples.filter(t => t.area < 10000);
-  displayTemples(smallTemples);
+  displayTemples(smallTemples, "Small Temples (< 10,000 sq ft)");
 });
+
