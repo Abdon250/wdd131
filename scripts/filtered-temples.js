@@ -117,11 +117,6 @@ function displayTemples(templeList, title = "All Temples") {
     const templeCard = document.createElement("div");
     templeCard.classList.add("temple-card");
 
-    const image = document.createElement("img");
-    image.src = temple.imageUrl;
-    image.alt = `${temple.templeName} Temple`;
-    image.loading = "lazy";
-
     const name = document.createElement("h2");
     name.textContent = temple.templeName;
 
@@ -134,8 +129,14 @@ function displayTemples(templeList, title = "All Temples") {
     const area = document.createElement("p");
     area.innerHTML = `<strong>Area:</strong> ${temple.area.toLocaleString()} sq ft`;
 
-    templeCard.append(image, name, location, dedicated, area);
+    const image = document.createElement("img");
+    image.src = temple.imageUrl;
+    image.alt = `${temple.templeName} Temple`;
+    image.loading = "lazy";
+
+    templeCard.append(name, location, dedicated, area, image);
     templeContainer.appendChild(templeCard);
+
   });
 }
 
