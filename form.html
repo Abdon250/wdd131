@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="A product review form that allows users to submit their feedback on various products, including ratings, features, and written reviews.">
+    <meta name="author" content="TUYIZERE Niyogisubizo Abdon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+       
+    </header>
+    <main>
+        <form method="get" action="review.html">
+
+      
+      <div class="form-group">
+        <label for="product">Product Name</label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a Product ...</option>
+          
+        </select>
+      </div>
+
+      <fieldset class="form-group1">
+        <legend>Overall Rating</legend>
+
+        <label>
+          <span>☆</span>
+          <input type="radio" name="rating" id="rating1" value="1" required />
+        </label>
+
+        <label>
+          <span>☆☆</span>
+          <input type="radio" name="rating" id="rating2" value="2" /> 
+        </label>
+
+        <label>
+          <span>☆☆☆</span>
+          <input type="radio" name="rating" id="rating3" value="3" />
+        </label>
+
+        <label>
+          <span>☆☆☆☆</span>
+          <input type="radio" name="rating" id="rating4" value="4" />
+        </label>
+
+        <label>
+          <span>☆☆☆☆☆</span>
+          <input type="radio" name="rating" id="rating5" value="5" />
+          
+        </label>
+      </fieldset>
+
+      <div class="form-group">
+        <label for="installDate">Date of Installation</label>
+        <input
+          type="date"
+          id="installDate"
+          name="installDate"
+          required
+        />
+      </div>
+
+      <fieldset class="form-group">
+        <legend>Useful Features (check all that apply)</legend>
+
+        <label for="feature1">
+          <input
+            type="checkbox"
+            id="feature1"
+            name="features"
+            value="Ease of Use"
+          />
+          Ease of Use
+        </label>
+
+        <label for="feature2">
+          <input
+            type="checkbox"
+            id="feature2"
+            name="features"
+            value="Performance"
+          />
+          Performance
+        </label>
+
+        <label for="feature3">
+          <input
+            type="checkbox"
+            id="feature3"
+            name="features"
+            value="Design"
+          />
+          Design
+        </label>
+
+        <label for="feature4">
+          <input
+            type="checkbox"
+            id="feature4"
+            name="features"
+            value="Reliability"
+          />
+          Reliability
+        </label>
+      </fieldset>
+
+     
+      <div class="form-group">
+        <label for="review">Written Review <span>(Optinal)</span></label>
+        <textarea
+          id="review"
+          name="review"
+          rows="4"
+        ></textarea>
+      </div>
+
+      
+      <div class="form-group">
+        <label for="username">Your Name <span>(Optional)</span></label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+        />
+      </div>
+
+      
+      <div class="form-group">
+        <input type="submit" value="Post Review" />
+      </div>
+
+    </form>
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> TUYIZERE N. Abdon. KIGALI</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>

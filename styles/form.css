@@ -1,0 +1,91 @@
+
+
+header {
+    color: #ffffff;
+    background-color: #0c677e;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #0c677e;
+    padding: 1rem;
+    text-align: left;
+    color: #ffffff;
+    height: 5rem;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #8080803b;
+    margin: 1rem auto;
+}
+form input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+form input[type="submit"] {
+    background-color: #0c677e;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 300px;
+    
+}
+form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}   
+
+.form-group label span {
+    font-size: 0.9rem;
+    color: #094f5c;
+}
+
+input[type="date"]{
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 290px;
+    height: 34px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+.form-group label {
+    font-weight: bold;
+
+}   
+.form-group input[type="text"],
+.form-group select,
+.form-group textarea {
+    width: 290px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group1 {
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    gap: 0.5rem;
+
+}
+
+
+.review {
+    text-align: center;
+    margin: 1rem auto;
+    background-color: #8080803b ;
+    height: 70vh;
+    width: 50vh;
+}
