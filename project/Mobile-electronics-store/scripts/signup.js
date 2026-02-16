@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return true;
   }
 
+  
   function validateEmail() {
     const value = emailInput.value.trim();
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
