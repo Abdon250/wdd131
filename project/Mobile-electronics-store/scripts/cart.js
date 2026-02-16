@@ -76,10 +76,10 @@ document.addEventListener('DOMContentLoaded', () => {
         div.className = 'cart-item';
         div.innerHTML = `
             <div class="item-details">
-                <img src="${imgSrc}" alt="${product.name}" />
+                <img src="${imgSrc}" alt="${product.name}" loading = lazy />
                 <h3>${product.name}</h3>
                 <p>Price: $${price.toFixed(2)}</p>
-                <p>Quantity: ${quantity}</p>
+                <p>Qty: ${quantity}</p>
                 <p>Total: $${(price * quantity).toFixed(2)}</p>
                 <button class="remove-btn" data-product-name="${product.name}">Remove</button>
             </div>
